@@ -18,6 +18,7 @@ export default function Home () {
           <div className="flex flex-col justify-start items-center">
             <div className="w-px h-20 mb-32 bg-flamingo"></div>
             <div className="-rotate-90">
+              test
               <Typography.BodyText className="text-flamingo">galanagamarygrace@gmail.com</Typography.BodyText></div>
           </div>
           <SocialList platforms={socials} />
