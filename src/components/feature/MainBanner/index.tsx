@@ -1,12 +1,8 @@
 import { Typography } from "src/components/base"
 
-interface MainBannerProps {
-
-}
-
 const MainBanner = () => {
   return (
-    <div className="h-dvh">
+    <div className="m-10 lg:flex md:flex flex-col justify-center">
       <div>
         <Typography.Caption>Hello, I am</Typography.Caption>
         <Typography.Header>Grace Monzales</Typography.Header>

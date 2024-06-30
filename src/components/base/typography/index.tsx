@@ -10,12 +10,12 @@ export const BlockQoute = () => {}
 
 export const Links = () => {}
 
-export const BodyText =  ({children}:Readonly<{children: ReactNode}>) => {
-  return <p>{children}</p>
+export const BodyText =  ({children, ...props}:{children: ReactNode} & React.HTMLAttributes<HTMLParagraphElement>) => {
+  return <p {...props}>{children}</p>
 }
 
-export const Caption = ({children}:Readonly<{children: ReactNode}>) => {
-  return <p className="text-xl">{children}</p>
+export const Caption = ({children, ...props}:{children: ReactNode} & React.HTMLAttributes<HTMLParagraphElement>) => {
+  return <p className="text-xl" {...props}>{children}</p>
 }
 
 export const List = () => {}
