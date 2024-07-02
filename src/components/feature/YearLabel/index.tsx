@@ -7,7 +7,6 @@ interface ExperienceLabelProps {
 }
 
 const YearLabel = ({from, to, isCurrent}: ExperienceLabelProps) => {
-  console.log({isCurrent})
 return (
   <div className="flex justify-between ">
     <p>{from}</p>
