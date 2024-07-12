@@ -33,5 +33,5 @@ jobs:
 
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: export # The folder the action should deploy.
+          folder: out # The folder the action should deploy.
           ssh-key: ${{ secrets.DEPLOY_KEY }} # ssh key for deployment
