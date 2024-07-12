@@ -2,7 +2,6 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -94,10 +93,10 @@ const config: Config = {
       "twilight-02": "#5C5F77",
       "twilight-03": "#6C6F85",
     },
-    fontFamily: {
-      sans: ["inter", "san-serif"],
-      code: ["fira code", "nunito"],
-    },
+    // fontFamily: {
+    //   sans: ["inter", "san-serif"],
+    //   code: ["fira code", "nunito"],
+    // },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
