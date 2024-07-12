@@ -21,7 +21,7 @@
     "paths": {
       // "@/hooks/": ["hooks/*"],
       // "@/components/base/": ["components/base/*"],
-      "@/components/feature/": ["components/feature/*"],
+      "@/components/feature/": ["components/feature/*"]
       // "@/lib": ["lib/*"]
     }
   },

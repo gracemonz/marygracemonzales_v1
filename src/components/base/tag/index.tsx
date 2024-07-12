@@ -1,12 +1,13 @@
-
 interface ITagProps {
-  text: string
+  text: string;
 }
 
-const Tag = ({text}: ITagProps) => {
+const Tag = ({ text }: ITagProps) => {
   return (
-    <div><p>{text}</p></div>
-  )
-}
+    <div>
+      <p>{text}</p>
+    </div>
+  );
+};
 
 export default Tag;

@@ -1,4 +1,4 @@
-import { Typography } from "src/components/base"
+import { Typography } from "src/components/base";
 
 const MainBanner = () => {
   return (
@@ -7,11 +7,14 @@ const MainBanner = () => {
         <Typography.Caption>Hello, I am</Typography.Caption>
         <Typography.Header>Grace Monzales</Typography.Header>
         <Typography.BodyText>
-          I&apos;m a Frontend Engineer who crafts visually appealing and highly functional web applications. At present, I&apos;m directing my efforts towards developing feature-based solutions for Trunkrs&apos; daily logistic operations.
+          I&apos;m a Frontend Engineer who crafts visually appealing and highly
+          functional web applications. At present, I&apos;m directing my efforts
+          towards developing feature-based solutions for Trunkrs&apos; daily
+          logistic operations.
         </Typography.BodyText>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default MainBanner
+export default MainBanner;

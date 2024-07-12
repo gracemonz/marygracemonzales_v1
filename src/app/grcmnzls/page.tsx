@@ -1,7 +1,5 @@
-
 const Home = () => {
+  return <div>Resume as PDF viewer</div>;
+};
 
-  return (<div>Resume as PDF viewer</div>)
-}
-
-export default Home
+export default Home;

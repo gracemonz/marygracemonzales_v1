@@ -1,17 +1,13 @@
+export const Input = () => {};
 
+export const TextArea = () => {};
 
+export const Option = () => {};
 
-export const Input = () => {}
+export const Number = () => {};
 
-export const TextArea = () => {}
+export const Range = () => {};
 
-export const Option = () => {}
+export const Radio = () => {};
 
-export const Number = () => {}
-
-export const Range = () => {}
-
-export const Radio = () => {}
-
-export const Telephone = () => {}
-
+export const Telephone = () => {};

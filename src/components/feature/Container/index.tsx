@@ -1,15 +1,15 @@
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 
 interface ContainerProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
-const Container = ({children}: ContainerProps) => {
+const Container = ({ children }: ContainerProps) => {
   return (
     <div className="w-full h-screen text-white-base bg-twilight">
-        {children}
+      {children}
     </div>
-  )
-}
+  );
+};
 
-export default Container
+export default Container;
