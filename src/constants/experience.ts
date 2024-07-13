@@ -17,7 +17,7 @@ export const workExperience: Experience[] = [
     yearEnded: "2022",
     jobTitle: "Full Stack Developer",
     company: "Emapta Inc.",
-    client?: "Sliqpay",
+    client: "Sliqpay",
     responsibilities:
       "Maintained and developed features for their SaaS application that offers payment solution for their clients in medical fields.",
     keyAchievements: ["", ""],
