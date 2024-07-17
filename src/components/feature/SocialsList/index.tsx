@@ -1,43 +1,54 @@
-import GithubIcon from "src/svg/Github"
-import GitlabIcon from "src/svg/Gitlab"
-import LinkedInIcon from "src/svg/LinkedIn"
-import TwitterIcon from "src/svg/Twitter"
-
-
+import {
+  faGithubAlt,
+  faGitlab,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export enum SocialsEnum {
-  Twitter = 'Twitter',
-  Github = 'Github',
-  Gitlab = 'Gitlab',
-  LinkedIn = 'LinkedIn'
+  Twitter = "Twitter",
+  Github = "Github",
+  Gitlab = "Gitlab",
+  LinkedIn = "LinkedIn",
 }
 
 const availableSocialPlatforms = {
-  [SocialsEnum.Twitter]: <TwitterIcon />,
-  [SocialsEnum.Github]: <GithubIcon />,
-  [SocialsEnum.Gitlab]: <GitlabIcon />,
-  [SocialsEnum.LinkedIn]: <LinkedInIcon />
-}
-
+  [SocialsEnum.Twitter]: (
+    <FontAwesomeIcon icon={faTwitter} style={{ color: "#EEBEBE" }} size="xl" />
+  ),
+  [SocialsEnum.Github]: (
+    <FontAwesomeIcon
+      icon={faGithubAlt}
+      style={{ color: "#EEBEBE" }}
+      size="xl"
+    />
+  ),
+  [SocialsEnum.Gitlab]: (
+    <FontAwesomeIcon icon={faGitlab} style={{ color: "#EEBEBE" }} size="xl" />
+  ),
+  [SocialsEnum.LinkedIn]: (
+    <FontAwesomeIcon icon={faLinkedin} style={{ color: "#EEBEBE" }} size="xl" />
+  ),
+};
 
 interface SocialListProps {
-  platforms: (keyof typeof SocialsEnum)[]
+  platforms: (keyof typeof SocialsEnum)[];
 }
 
-const SocialList = ({platforms}:SocialListProps) => {
-
+const SocialList = ({ platforms }: SocialListProps) => {
   return (
     <div className="flex flex-col justify-end items-center">
       <ul className="list-none space-y-5">
-        {platforms.length > 0 && (
-          platforms.map((platform) => <li key={platform}>
-            {availableSocialPlatforms[platform] || null}
-          </li>)
-        )}
+        {platforms.length > 0 &&
+          platforms.map((platform) => (
+            <li key={platform} className="h-6 w-6 my-4">
+              {availableSocialPlatforms[platform]}
+            </li>
+          ))}
       </ul>
       <div className="w-px h-40 mt-4 bg-flamingo"></div>
     </div>
+  );
+};
 
-  )
-}
-
-export default SocialList
+export default SocialList;
