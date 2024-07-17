@@ -10,8 +10,8 @@
 }
 
 .gradient {
-  width: 1000px;
-  height: 1000px;
+  width: 1150px;
+  height: 1150px;
   border-radius: 50%;
   opacity: 0.8;
   filter: blur(70px);
@@ -22,9 +22,9 @@
 }
 
 .firstRotateAnimator {
-  // background-color: green;
+  // background-color: #e78284;
   position: absolute;
-  top: -50%;
+  top: -35%;
   left: 0;
   right: auto;
   width: 30%;
@@ -34,8 +34,9 @@
   animation-iteration-count: infinite;
 }
 .secondRotateAnimation {
+  // background: #edb080;
   position: absolute;
-  top: -50%;
+  top: -35%;
   left: 35%;
   right: auto;
   width: 30%;
@@ -46,8 +47,9 @@
 }
 
 .thirdRotateAnimation {
+  // background: #a5ff6e;
   position: absolute;
-  top: -50%;
+  top: -35%;
   right: 35%;
   left: auto;
   width: 30%;
@@ -58,8 +60,9 @@
 }
 
 .fourthRotateAnimation {
+  // background: #7eb9ff;
   position: absolute;
-  top: -50%;
+  top: -35%;
   left: auto;
   right: 10%;
   width: 30%;

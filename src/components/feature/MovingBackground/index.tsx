@@ -1,6 +1,7 @@
 import styles from "@/styles/MovingBackground.module.scss";
+import React from "react";
 
-const MovingBackground = () => {
+export function MovingBackground() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.firstRotateAnimator}>
@@ -17,6 +18,6 @@ const MovingBackground = () => {
       </div>
     </div>
   );
-};
+}
 
-export default MovingBackground;
+export const MemoizedMovingBackground = React.memo(MovingBackground);

@@ -4,7 +4,7 @@ import Container from "../Container";
 const MainBanner = () => {
   return (
     <Container>
-      <div className="h-screen lg:flex md:flex lg:flex-col justify-center ">
+      <div className="h-screen flex flex-col justify-center">
         <div>
           <Typography.Caption>Hello, I am</Typography.Caption>
           <Typography.Header className="lg:text-6xl font-bold text-5xl">

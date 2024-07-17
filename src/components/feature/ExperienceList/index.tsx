@@ -1,10 +1,13 @@
 import { Typography } from "src/components/base";
+import Container from "../Container";
 
 const ExperienceList = () => {
   return (
-    <div>
-      <Typography.Subheader>Experience</Typography.Subheader>
-    </div>
+    <Container>
+      <div>
+        <Typography.Subheader>Experience</Typography.Subheader>
+      </div>
+    </Container>
   );
 };
 
