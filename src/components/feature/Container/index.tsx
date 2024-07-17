@@ -6,9 +6,7 @@ interface ContainerProps {
 
 const Container = ({ children }: ContainerProps) => {
   return (
-    <div className="w-full h-screen text-white-base bg-twilight">
-      {children}
-    </div>
+    <div className=" md:mx-20 lg:mx-20 mx-10 text-white-base">{children}</div>
   );
 };
 

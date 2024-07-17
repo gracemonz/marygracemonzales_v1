@@ -11,11 +11,12 @@ const config: Config = {
     fontSize: {
       sm: "0.8rem",
       base: "1rem",
-      xl: "1.25rem",
+      xl: "1.125rem",
       "2xl": "1.563rem",
       "3xl": "1.953rem",
       "4xl": "2.441rem",
       "5xl": "3.052rem",
+      "6xl": "4.375rem",
     },
     spacing: {
       px: "1px",
@@ -95,10 +96,10 @@ const config: Config = {
       "twilight-02": "#5C5F77",
       "twilight-03": "#6C6F85",
     },
-    // fontFamily: {
-    //   sans: ["inter", "san-serif"],
-    //   code: ["fira code", "nunito"],
-    // },
+    fontFamily: {
+      sans: ["inter", "san-serif"],
+      code: ["fira code", "nunito"],
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
