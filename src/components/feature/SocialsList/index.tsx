@@ -14,13 +14,19 @@ export enum SocialsEnum {
 
 const availableSocialPlatforms = {
   [SocialsEnum.Twitter]: (
-    <FontAwesomeIcon icon={faTwitter} style={{ color: "#EEBEBE" }} size="xl" />
+    <FontAwesomeIcon
+      icon={faTwitter}
+      className="hover:bg-white"
+      style={{ color: "#EEBEBE" }}
+      size="xl"
+    />
   ),
   [SocialsEnum.Github]: (
     <FontAwesomeIcon
       icon={faGithubAlt}
       style={{ color: "#EEBEBE" }}
       size="xl"
+      beatFade
     />
   ),
   [SocialsEnum.Gitlab]: (
@@ -41,7 +47,7 @@ const SocialList = ({ platforms }: SocialListProps) => {
       <ul className="list-none space-y-5">
         {platforms.length > 0 &&
           platforms.map((platform) => (
-            <li key={platform} className="h-6 w-6 my-4">
+            <li key={platform} className="h-6 w-6 my-4 cursor-pointer">
               {availableSocialPlatforms[platform]}
             </li>
           ))}

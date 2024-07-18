@@ -6,12 +6,14 @@ export interface Experience {
   client?: string;
   responsibilities: string;
   keyAchievements: string[];
-  technologyUsed: Technologies[];
+  technologyUsed: (Technologies | CMS | Frameworks | Libraries | Databases)[];
+  isCurrent: boolean;
 }
 
 export type Technologies =
   | "Typescript"
   | "AngularJS"
+  | "VueJS"
   | "Javascript"
   | "CSS"
   | "HTML"
@@ -19,8 +21,8 @@ export type Technologies =
   | "React Native"
   | "PHP"
   | "Python"
-  | "Storybook"
-  | "Go";
+  | "Go"
+  | "NodeJS";
 
 export type Libraries =
   | "NextUI"
@@ -28,7 +30,13 @@ export type Libraries =
   | "ExpressJS"
   | "GraphQL"
   | "ReactJS"
-  | "Apollo";
+  | "ExpressJS"
+  | "Apollo"
+  | "Storybook"
+  | "Jest"
+  | "SASS/LESS"
+  | "Redux"
+  | "RTK Query";
 
 export type Frameworks =
   | "NextJS"
@@ -36,6 +44,10 @@ export type Frameworks =
   | "Angular"
   | "Gatsby"
   | "Bootstrap";
+
+export type Databases = "MongoDB" | "PostgreSQL";
+
+export type CMS = "Drupal 7" | "Drupal 8" | "Strapi";
 
 export type SoftSkills =
   | "Adaptability"

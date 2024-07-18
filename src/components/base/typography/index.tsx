@@ -44,6 +44,26 @@ export const Caption = ({
   );
 };
 
+export const Highlight = ({
+  children,
+  ...props
+}: { children: ReactNode } & React.HTMLAttributes<HTMLParagraphElement>) => {
+  return (
+    <span className="font-semibold text-flamingo" {...props}>
+      {children}
+    </span>
+  );
+};
+
 export const List = () => {};
 
-export const SmallText = () => {};
+export const SmallText = ({
+  children,
+  ...props
+}: { children: ReactNode } & React.HTMLAttributes<HTMLParagraphElement>) => {
+  return (
+    <p className="text-sm" {...props}>
+      {children}
+    </p>
+  );
+};

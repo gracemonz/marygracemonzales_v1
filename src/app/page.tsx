@@ -1,3 +1,4 @@
+import Container from "@/components/feature/Container";
 import ExperienceList from "@/components/feature/ExperienceList";
 import { MovingBackground } from "@/components/feature/MovingBackground";
 import { NextUIProvider } from "@nextui-org/system";
@@ -13,10 +14,12 @@ export default function Page() {
         <MovingBackground />
         <div className="container md:container md:mx-auto mx-auto z-20 relative">
           <MainBanner></MainBanner>
-          <div className="h-full grid lg:grid-rows-2 xl:grid-cols-2 md:grid-row-2 gap-2">
-            <About />
-            <ExperienceList />
-          </div>
+          <Container>
+            <div className="h-full grid lg:grid-rows-2 xl:grid-cols-2 md:grid-row-2 gap-10">
+              <About />
+              <ExperienceList />
+            </div>
+          </Container>
         </div>
       </div>
     </NextUIProvider>

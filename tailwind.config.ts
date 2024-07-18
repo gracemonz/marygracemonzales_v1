@@ -72,6 +72,9 @@ const config: Config = {
       "2xl": "1536px",
     },
     colors: {
+      primary: "#EEBEBE",
+      secondary: "#CA9EE6",
+      transparent: "transparent",
       muave: "#CA9EE6",
       flamingo: "#EEBEBE",
       rosewater: "#F2D5CF",
@@ -109,6 +112,33 @@ const config: Config = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            primary: {
+              DEFAULT: "#EEBEBE",
+              foreground: "#000000",
+            },
+            focus: "#EEBEBE",
+          },
+        },
+        dark: {
+          colors: {
+            primary: {
+              DEFAULT: "#EEBEBE",
+              foreground: "#000000",
+            },
+            danger: {
+              DEFAULT: "#F2D5CF",
+              foreground: "#000000",
+            },
+            focus: "#EEBEBE",
+          },
+        },
+      },
+    }),
+  ],
 };
 export default config;
