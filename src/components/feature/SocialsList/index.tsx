@@ -16,24 +16,27 @@ const availableSocialPlatforms = {
   [SocialsEnum.Twitter]: (
     <FontAwesomeIcon
       icon={faTwitter}
-      className="hover:bg-white"
-      style={{ color: "#EEBEBE" }}
-      size="xl"
+      className="hover:text-muave text-flamingo"
     />
   ),
   [SocialsEnum.Github]: (
     <FontAwesomeIcon
       icon={faGithubAlt}
-      style={{ color: "#EEBEBE" }}
-      size="xl"
+      className="hover:text-muave text-flamingo"
       beatFade
     />
   ),
   [SocialsEnum.Gitlab]: (
-    <FontAwesomeIcon icon={faGitlab} style={{ color: "#EEBEBE" }} size="xl" />
+    <FontAwesomeIcon
+      icon={faGitlab}
+      className="hover:text-muave text-flamingo"
+    />
   ),
   [SocialsEnum.LinkedIn]: (
-    <FontAwesomeIcon icon={faLinkedin} style={{ color: "#EEBEBE" }} size="xl" />
+    <FontAwesomeIcon
+      icon={faLinkedin}
+      className="hover:text-muave text-flamingo"
+    />
   ),
 };
 

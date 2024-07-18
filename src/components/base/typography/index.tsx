@@ -49,7 +49,7 @@ export const Highlight = ({
   ...props
 }: { children: ReactNode } & React.HTMLAttributes<HTMLParagraphElement>) => {
   return (
-    <span className="font-semibold text-flamingo" {...props}>
+    <span className="font-semibold text-muave" {...props}>
       {children}
     </span>
   );

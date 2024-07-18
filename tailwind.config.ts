@@ -121,13 +121,8 @@ const config: Config = {
               DEFAULT: "#EEBEBE",
               foreground: "#000000",
             },
-            focus: "#EEBEBE",
-          },
-        },
-        dark: {
-          colors: {
-            primary: {
-              DEFAULT: "#EEBEBE",
+            secondary: {
+              DEFAULT: "#CA9EE6",
               foreground: "#000000",
             },
             danger: {
@@ -137,6 +132,7 @@ const config: Config = {
             focus: "#EEBEBE",
           },
         },
+        dark: {},
       },
     }),
   ],
