@@ -3,7 +3,7 @@
 import path from "path";
 
 const nextConfig = {
-  // basePath: "/marygracemonzales_v1",
+  basePath: "",
   output: "export",
   reactStrictMode: true,
   sassOptions: {
