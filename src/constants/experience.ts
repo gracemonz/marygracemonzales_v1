@@ -41,7 +41,7 @@ export const workExperience: Experience[] = [
       website: "https://denticarepaymentplans.com.au/",
     },
     responsibilities:
-      "Maintained and developed features for their SaaS application that offers payment solution for their clients in medical fields.",
+      "Maintained and developed features for their SaaS application that offers payment solution for their clients in medical field.",
     keyAchievements: ["", ""],
     technologyUsed: ["Typescript", "AngularJS", "PHP", "Material UI", "Jest"],
     isCurrent: false,
@@ -55,7 +55,7 @@ export const workExperience: Experience[] = [
       website: "https://www.umpisa.co/",
     },
     responsibilities:
-      "Developed new websites and maintained legacy codebase for both internal and internation clients of Umpisa.",
+      "Developed new websites and maintained legacy codebase for both internal and international clients of Umpisa.",
     keyAchievements: ["", ""],
     projects: [
       { name: "CloudSense", website: "https://prod.ulap.co/auth/login" },
@@ -88,7 +88,7 @@ export const workExperience: Experience[] = [
       website: "https://coreproc.com/",
     },
     responsibilities:
-      "Developed new websites and maintained legacy codebase for both internal and internation clients of Umpisa.",
+      "Worked as a PHP Developer. Contributed on maintaining existing web applications as well as creating marketing websites for local clients in PH.",
     keyAchievements: ["", ""],
     technologyUsed: [
       "React",
