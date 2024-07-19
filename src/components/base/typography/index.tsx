@@ -16,7 +16,7 @@ export const Subheader = ({
   ...props
 }: { children: ReactNode } & React.HtmlHTMLAttributes<HTMLHeadingElement>) => {
   return (
-    <h2 className="text-xl uppercase text-flamingo font-semibold" {...props}>
+    <h2 className="text-xl capitalize text-flamingo font-semibold" {...props}>
       {children}
     </h2>
   );

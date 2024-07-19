@@ -1,9 +1,8 @@
 import {
-  faGithubAlt,
-  faGitlab,
   faLinkedin,
-  faLinkedinIn,
-  faTwitter,
+  faSquareGithub,
+  faSquareGitlab,
+  faSquareTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export enum SocialsEnum {
@@ -18,32 +17,32 @@ const availableSocialPlatforms = {
   [SocialsEnum.LinkedIn]: (
     <a href="https://www.linkedin.com/in/gracegalanaga/" target="_blank">
       <FontAwesomeIcon
-        icon={faLinkedinIn}
-        className="group-hover:text-muave text-flamingo"
+        icon={faLinkedin}
+        className="group-hover:text-muave text-white-mantle lg:text-flamingo"
       />
     </a>
   ),
   [SocialsEnum.Twitter]: (
     <a href="https://x.com/thegreecepotato" target="_blank">
       <FontAwesomeIcon
-        icon={faTwitter}
-        className="group-hover:text-muave text-flamingo"
+        icon={faSquareTwitter}
+        className="group-hover:text-muave text-white-mantle lg:text-flamingo"
       />
     </a>
   ),
   [SocialsEnum.Github]: (
     <a href="https://github.com/gracemonz" target="_blank">
       <FontAwesomeIcon
-        icon={faGithubAlt}
-        className="group-hover:text-muave text-flamingo"
+        icon={faSquareGithub}
+        className="group-hover:text-muave text-white-mantle lg:text-flamingo"
       />
     </a>
   ),
   [SocialsEnum.Gitlab]: (
     <a href="https://gitlab.com/moshimanju" target="_blank">
       <FontAwesomeIcon
-        icon={faGitlab}
-        className="group-hover:text-muave text-flamingo"
+        icon={faSquareGitlab}
+        className="group-hover:text-muave text-white-mantle lg:text-flamingo"
       />
     </a>
   ),

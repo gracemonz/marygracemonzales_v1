@@ -24,26 +24,26 @@ const ExpPanel = ({
   const hasProjectList = projects !== undefined && projects?.length > 0;
 
   const handleWeblink = (): string => {
-    if (hasClient) {
-      return client.website || "";
+    if (hasClient && client.website !== undefined) {
+      return client.website;
     }
-    if (hasCompany) {
-      return company.website || "";
+    if (hasCompany && company.website !== undefined) {
+      return company.website;
     }
 
     return "#";
   };
 
   return (
-    <div className="group/expcard md:flex hover:bg-none cursor-pointer hover:shadow-2xl my-4 py-4 rounded-md hover:transition-all">
-      <div className="p-5 max-w-[400]">
+    <div className="group/expcard md:flex md:hover:bg-none cursor-pointer md:hover:shadow-2xl md:hover:transition-all my-4 py-4 rounded-md">
+      <div className="md:p-5 max-w-[400]">
         <Typography.SmallText className="text-sm text-white-mantle uppercase font-mono">
           {yearStarted} - {isCurrent && "Present"} {!isCurrent && yearEnded}
         </Typography.SmallText>
       </div>
-      <div className="flex-1 p-4">
+      <div className="flex-1 md:p-4">
         <a href={handleWeblink()} target="_blank" className="flex">
-          <Typography.Subheader className="text-xl capitalize text-white-base group-hover/expcard:text-muave">
+          <Typography.Subheader className="lg:text-xl capitalize text-white-base group-hover/expcard:text-muave">
             {jobTitle}, {company.name} {hasClient && ` · ${client.name}`}
           </Typography.Subheader>
           <p className="h-4 w-4 mx-4 self-center">
@@ -78,7 +78,7 @@ const ExpPanel = ({
                       size="xs"
                     />
                   </p>
-                  <Typography.BodyText>{project.name}</Typography.BodyText>
+                  <Typography.SmallText>{project.name}</Typography.SmallText>
                 </a>
               </div>
             ))}

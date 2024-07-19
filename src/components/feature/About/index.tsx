@@ -31,6 +31,11 @@ const About = () => {
           restaurants, travelling locally, free diving, or playing games.
         </Typography.BodyText>
       </div>
+      <div className="cursor-pointer">
+        <Typography.BodyText className="text-flamingo font-medium capitalize">
+          View full résumé
+        </Typography.BodyText>
+      </div>
     </div>
   );
 };
