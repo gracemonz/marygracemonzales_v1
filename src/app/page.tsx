@@ -15,7 +15,7 @@ export default function Page() {
         <div className="container md:container md:mx-auto mx-auto z-20 relative">
           <MainBanner></MainBanner>
           <Container>
-            <div className="grid lg:grid-row-2 xl:grid-cols-2 md:grid-row-2 gap-10">
+            <div className="grid lg:grid-row-2 xl:grid-cols-2 md:grid-row-2 gap-10 py-10">
               <About />
               <ExperienceList />
             </div>

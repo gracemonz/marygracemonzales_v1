@@ -99,10 +99,6 @@ const config: Config = {
       "twilight-02": "#5C5F77",
       "twilight-03": "#6C6F85",
     },
-    fontFamily: {
-      sans: ["inter", "san-serif"],
-      code: ["fira code", "nunito"],
-    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

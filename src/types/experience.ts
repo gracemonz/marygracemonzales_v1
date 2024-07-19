@@ -2,13 +2,22 @@ export interface Experience {
   yearStarted: string;
   yearEnded: string;
   jobTitle: string;
-  company: string;
-  client?: string;
+  projects?: Project[];
+  company: CompanyInformation;
+  client?: ClientInformation;
   responsibilities: string;
   keyAchievements: string[];
   technologyUsed: (Technologies | CMS | Frameworks | Libraries | Databases)[];
   isCurrent: boolean;
 }
+
+export type Information = { name: string; website?: string };
+
+export interface CompanyInformation extends Information {}
+
+export interface ClientInformation extends Information {}
+
+export interface Project extends Information {}
 
 export type Technologies =
   | "Typescript"
@@ -22,6 +31,7 @@ export type Technologies =
   | "PHP"
   | "Python"
   | "Go"
+  | "HTML & SCSS"
   | "NodeJS";
 
 export type Libraries =

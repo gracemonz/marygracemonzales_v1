@@ -38,7 +38,7 @@ export const Caption = ({
   ...props
 }: { children: ReactNode } & React.HTMLAttributes<HTMLParagraphElement>) => {
   return (
-    <p className="text-2xl" {...props}>
+    <p className={`text-2xl ${props.className}`} {...props}>
       {children}
     </p>
   );

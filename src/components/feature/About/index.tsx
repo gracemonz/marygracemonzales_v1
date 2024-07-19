@@ -28,7 +28,7 @@ const About = () => {
         </Typography.BodyText>
         <Typography.BodyText>
           When I&apos;m not coding, you&apos;ll find me exploring new
-          restaurants, traveling locally, free diving, or playing games.
+          restaurants, travelling locally, free diving, or playing games.
         </Typography.BodyText>
       </div>
     </div>

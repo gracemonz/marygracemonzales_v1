@@ -16,26 +16,26 @@ const availableSocialPlatforms = {
   [SocialsEnum.Twitter]: (
     <FontAwesomeIcon
       icon={faTwitter}
-      className="hover:text-muave text-flamingo"
+      className="group-hover:text-muave text-flamingo"
     />
   ),
   [SocialsEnum.Github]: (
     <FontAwesomeIcon
       icon={faGithubAlt}
-      className="hover:text-muave text-flamingo"
+      className="group-hover:text-muave text-flamingo"
       beatFade
     />
   ),
   [SocialsEnum.Gitlab]: (
     <FontAwesomeIcon
       icon={faGitlab}
-      className="hover:text-muave text-flamingo"
+      className="group-hover:text-muave text-flamingo"
     />
   ),
   [SocialsEnum.LinkedIn]: (
     <FontAwesomeIcon
       icon={faLinkedin}
-      className="hover:text-muave text-flamingo"
+      className="group-hover:text-muave text-flamingo"
     />
   ),
 };
@@ -50,7 +50,10 @@ const SocialList = ({ platforms }: SocialListProps) => {
       <ul className="list-none space-y-5">
         {platforms.length > 0 &&
           platforms.map((platform) => (
-            <li key={platform} className="h-6 w-6 my-4 cursor-pointer">
+            <li
+              key={platform}
+              className="group transition ease-in-out hover:scale-110 hover:-translate-y-1 duration-300 h-6 w-6 my-4 cursor-pointer"
+            >
               {availableSocialPlatforms[platform]}
             </li>
           ))}

@@ -6,7 +6,9 @@ const MainBanner = () => {
     <Container>
       <div className="h-screen flex flex-col justify-center">
         <div>
-          <Typography.Caption>Hello, I am</Typography.Caption>
+          <Typography.Caption className=" lg:text-2xl font-mono">
+            Hello, I am
+          </Typography.Caption>
           <Typography.Header className="lg:text-6xl font-bold text-5xl">
             Grace Monzales
           </Typography.Header>

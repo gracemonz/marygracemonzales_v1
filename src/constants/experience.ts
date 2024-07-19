@@ -5,8 +5,13 @@ export const workExperience: Experience[] = [
     yearStarted: "2022",
     yearEnded: "2024",
     jobTitle: "Front End Developer",
-    company: "Microsourcing Inc.",
-    client: "Trunkrs B.V.",
+    company: {
+      name: "Microsourcing Inc.",
+    },
+    client: {
+      name: "Trunkrs B.V.",
+      website: "https://trunkrs.nl/",
+    },
     responsibilities:
       "Worked on building front-end features  for a logistics company that offers SaaS for B2B and B2C business solutions for different webshops and personal owned businesses.",
     keyAchievements: ["", ""],
@@ -28,8 +33,13 @@ export const workExperience: Experience[] = [
     yearStarted: "2021",
     yearEnded: "2022",
     jobTitle: "Full Stack Developer",
-    company: "Emapta Inc.",
-    client: "Sliqpay",
+    company: {
+      name: "Emapta Inc.",
+    },
+    client: {
+      name: "DentiCare",
+      website: "https://denticarepaymentplans.com.au/",
+    },
     responsibilities:
       "Maintained and developed features for their SaaS application that offers payment solution for their clients in medical fields.",
     keyAchievements: ["", ""],
@@ -40,11 +50,17 @@ export const workExperience: Experience[] = [
     yearStarted: "2020",
     yearEnded: "2021",
     jobTitle: "Full Stack Developer",
-    company: "Umpisa Inc.",
-
+    company: {
+      name: "Umpisa Inc.",
+      website: "https://www.umpisa.co/",
+    },
     responsibilities:
       "Developed new websites and maintained legacy codebase for both internal and internation clients of Umpisa.",
     keyAchievements: ["", ""],
+    projects: [
+      { name: "CloudSense", website: "https://prod.ulap.co/auth/login" },
+      { name: "Venio", website: "https://www.veniopay.com/" },
+    ],
     technologyUsed: [
       "React",
       "Javascript",
@@ -62,8 +78,10 @@ export const workExperience: Experience[] = [
     yearStarted: "2020",
     yearEnded: "2021",
     jobTitle: "PHP Developer",
-    company: "Coreproc Inc.",
-
+    company: {
+      name: "Coreproc Inc.",
+      website: "https://coreproc.com/",
+    },
     responsibilities:
       "Developed new websites and maintained legacy codebase for both internal and internation clients of Umpisa.",
     keyAchievements: ["", ""],

@@ -8,7 +8,7 @@ const ExperienceList = () => {
   const hasExperience = workExperience.length > 0 || false;
   return (
     <div>
-      <div className="pl-5">
+      <div className="sm:p-0 md:p-0 pl-5">
         <Typography.Subheader>Experience</Typography.Subheader>
       </div>
       {hasExperience &&
