@@ -9,7 +9,7 @@ export const workExperience: Experience[] = [
       name: "Microsourcing Inc.",
     },
     client: {
-      name: "Trunkrs B.V.",
+      name: "Trunkrs",
       website: "https://trunkrs.nl/",
     },
     responsibilities:
@@ -60,6 +60,7 @@ export const workExperience: Experience[] = [
     projects: [
       { name: "CloudSense", website: "https://prod.ulap.co/auth/login" },
       { name: "Venio", website: "https://www.veniopay.com/" },
+      { name: "Kamada", website: "https://www.facebook.com/KamadaByUmpisa/" },
     ],
     technologyUsed: [
       "React",
@@ -75,9 +76,13 @@ export const workExperience: Experience[] = [
     isCurrent: false,
   },
   {
-    yearStarted: "2020",
-    yearEnded: "2021",
+    yearStarted: "2018",
+    yearEnded: "2020",
     jobTitle: "PHP Developer",
+    projects: [
+      { name: "Bonakid", website: "https://www.parenteam.com.ph/" },
+      { name: "Marlboro", website: "https://marlboro.ph/" },
+    ],
     company: {
       name: "Coreproc Inc.",
       website: "https://coreproc.com/",

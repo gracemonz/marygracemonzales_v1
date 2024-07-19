@@ -35,27 +35,25 @@ const ExpPanel = ({
   };
 
   return (
-    <div className="group md:flex hover:bg-none cursor-pointer hover:shadow-2xl my-4 py-4 rounded-md hover:transition-all">
+    <div className="group/expcard md:flex hover:bg-none cursor-pointer hover:shadow-2xl my-4 py-4 rounded-md hover:transition-all">
       <div className="p-5 max-w-[400]">
         <Typography.SmallText className="text-sm text-white-mantle uppercase font-mono">
           {yearStarted} - {isCurrent && "Present"} {!isCurrent && yearEnded}
         </Typography.SmallText>
       </div>
       <div className="flex-1 p-4">
-        <div className="flex">
-          <a href={handleWeblink()} target="_blank">
-            <Typography.Subheader className="text-xl capitalize text-white-base group-hover:text-muave">
-              {jobTitle}, {company.name} {hasClient && ` · ${client.name}`}
-            </Typography.Subheader>
-          </a>
-          <div className="h-4 w-4 mx-4 self-start">
+        <a href={handleWeblink()} target="_blank" className="flex">
+          <Typography.Subheader className="text-xl capitalize text-white-base group-hover/expcard:text-muave">
+            {jobTitle}, {company.name} {hasClient && ` · ${client.name}`}
+          </Typography.Subheader>
+          <p className="h-4 w-4 mx-4 self-center">
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
-              className="group-hover:text-muave"
+              className="group-hover/expcard:text-muave"
               size="sm"
             />
-          </div>
-        </div>
+          </p>
+        </a>
         <div className="my-4">
           <Typography.BodyText className="text-white-crust font-light">
             {responsibilities}
@@ -64,16 +62,19 @@ const ExpPanel = ({
         <div className="flex gap-4">
           {hasProjectList &&
             projects.map((project) => (
-              <div key={project.name} className="my-2">
+              <div
+                key={project.name}
+                className="my-2 group/project hover:text-muave"
+              >
                 <a
-                  href={project.website}
+                  href={project.website || "#"}
                   target="_blank"
-                  className="flex items-center  group-hover:text-muave"
+                  className="flex items-center"
                 >
                   <p className="h-3.5 w-3.5 mr-2">
                     <FontAwesomeIcon
                       icon={faLink}
-                      className=" group-hover:text-muave text-white-base"
+                      className="group-hover/project:text-muave text-white-base"
                       size="xs"
                     />
                   </p>

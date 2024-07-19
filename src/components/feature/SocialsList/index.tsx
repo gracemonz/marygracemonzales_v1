@@ -12,31 +12,40 @@ export enum SocialsEnum {
   LinkedIn = "LinkedIn",
 }
 
+// TODO: refactor redirects
 const availableSocialPlatforms = {
   [SocialsEnum.Twitter]: (
-    <FontAwesomeIcon
-      icon={faTwitter}
-      className="group-hover:text-muave text-flamingo"
-    />
+    <a href="https://x.com/thegreecepotato" target="_blank">
+      <FontAwesomeIcon
+        icon={faTwitter}
+        className="group-hover:text-muave text-flamingo"
+      />
+    </a>
   ),
   [SocialsEnum.Github]: (
-    <FontAwesomeIcon
-      icon={faGithubAlt}
-      className="group-hover:text-muave text-flamingo"
-      beatFade
-    />
+    <a href="https://github.com/gracemonz" target="_blank">
+      <FontAwesomeIcon
+        icon={faGithubAlt}
+        className="group-hover:text-muave text-flamingo"
+        beatFade
+      />
+    </a>
   ),
   [SocialsEnum.Gitlab]: (
-    <FontAwesomeIcon
-      icon={faGitlab}
-      className="group-hover:text-muave text-flamingo"
-    />
+    <a href="https://gitlab.com/moshimanju" target="_blank">
+      <FontAwesomeIcon
+        icon={faGitlab}
+        className="group-hover:text-muave text-flamingo"
+      />
+    </a>
   ),
   [SocialsEnum.LinkedIn]: (
-    <FontAwesomeIcon
-      icon={faLinkedin}
-      className="group-hover:text-muave text-flamingo"
-    />
+    <a href="https://www.linkedin.com/in/gracegalanaga/" target="_blank">
+      <FontAwesomeIcon
+        icon={faLinkedin}
+        className="group-hover:text-muave text-flamingo"
+      />
+    </a>
   ),
 };
 
