@@ -1,7 +1,10 @@
 import { Typography } from "@/components/base";
 import Container from "../Container";
+import SocialList, { SocialsEnum } from "../SocialsList";
 
 const MainBanner = () => {
+  const socials = ["LinkedIn", "Twitter", "Github", "Gitlab"] as SocialsEnum[];
+
   return (
     <Container>
       <div className="h-screen flex flex-col justify-center">
@@ -19,6 +22,9 @@ const MainBanner = () => {
             <Typography.Highlight> Trunkrs&apos;</Typography.Highlight> daily
             logistic operations.
           </Typography.BodyText>
+        </div>
+        <div className="my-10 md:block sm:block lg:hidden">
+          <SocialList platforms={socials} position="horizontal" />
         </div>
       </div>
     </Container>
