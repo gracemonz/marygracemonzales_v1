@@ -17,12 +17,13 @@ const About = () => {
         </Typography.BodyText>
         <Typography.BodyText>
           I&apos;ve dabbled in various technologies, building SaaS for
-          <Typography.Highlight> advertising</Typography.Highlight>,
-          <Typography.Highlight> real estate</Typography.Highlight>,
-          <Typography.Highlight> retail</Typography.Highlight>,
-          <Typography.Highlight> payment solutions</Typography.Highlight>, and
-          <Typography.Highlight> logistics</Typography.Highlight>. These days, I
-          focus on developing and maintaining features for
+          <Typography.Highlight>&nbsp;advertising</Typography.Highlight>,
+          <Typography.Highlight>&nbsp;real estate</Typography.Highlight>,
+          <Typography.Highlight>&nbsp;retail</Typography.Highlight>,
+          <Typography.Highlight>&nbsp;payment solutions</Typography.Highlight>,
+          and
+          <Typography.Highlight>&nbsp;logistics</Typography.Highlight>. These
+          days, I focus on developing and maintaining features for
           <a href="https://trunkrs.nl/" target="_blank">
             <Typography.Highlight>
               &nbsp;Trunkrs&apos;&nbsp;
@@ -35,11 +36,10 @@ const About = () => {
           restaurants, travelling locally, free diving, or playing games.
         </Typography.BodyText>
       </div>
-      <div className="cursor-pointer">
-        <Typography.BodyText className="text-flamingo font-medium capitalize">
-          View full résumé
-        </Typography.BodyText>
-      </div>
+      {/* soon */}
+      {/* <div className="cursor-pointer">
+        <Typography.Subheader>View full résumé</Typography.Subheader>
+      </div> */}
     </div>
   );
 };

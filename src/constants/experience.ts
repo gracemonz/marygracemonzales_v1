@@ -33,6 +33,7 @@ export const workExperience: Experience[] = [
       "SASS/LESS",
       "Redux",
       "RTK Query",
+      "MobX",
     ],
     isCurrent: true,
   },
@@ -50,7 +51,7 @@ export const workExperience: Experience[] = [
       },
     ],
     client: {
-      name: "Sliqpay (Former Payvantage Global)",
+      name: "Sliqpay",
       website: "https://sliqpay.com",
     },
     responsibilities:

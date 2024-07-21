@@ -46,7 +46,8 @@ export type Libraries =
   | "Jest"
   | "SASS/LESS"
   | "Redux"
-  | "RTK Query";
+  | "RTK Query"
+  | "MobX";
 
 export type Frameworks =
   | "NextJS"

@@ -38,7 +38,7 @@ const ExpPanel = ({
     <div className="group/expcard transition ease-in-out md:flex md:hover:bg-none cursor-pointer md:hover:shadow-2xl md:hover:transition-all my-4 py-4 rounded-md">
       <div className="md:p-5 max-w-[400px] min-w-[150px]">
         <Typography.SmallText className="text-sm text-white-mantle uppercase font-mono">
-          {yearStarted} - {isCurrent && "Present"} {!isCurrent && yearEnded}
+          {yearStarted} - {isCurrent && "present"} {!isCurrent && yearEnded}
         </Typography.SmallText>
       </div>
       <div className="flex-1 md:p-4">
