@@ -12,6 +12,13 @@ export const workExperience: Experience[] = [
       name: "Trunkrs",
       website: "https://trunkrs.nl/",
     },
+    projects: [
+      {
+        name: "Trunkrs shipping portal",
+        website: "https://portal.trunkrs.app/",
+      },
+      { name: "Track and Trace", website: "https://parcel.trunkrs.nl/" },
+    ],
     responsibilities:
       "Worked on building front-end features  for a logistics company that offers SaaS for B2B and B2C business solutions for different webshops and personal owned businesses.",
     keyAchievements: ["", ""],
@@ -36,9 +43,15 @@ export const workExperience: Experience[] = [
     company: {
       name: "Emapta Inc.",
     },
+    projects: [
+      {
+        name: "DentiCare",
+        website: "https://denticarepaymentplans.com.au/",
+      },
+    ],
     client: {
-      name: "DentiCare",
-      website: "https://denticarepaymentplans.com.au/",
+      name: "Sliqpay (Former Payvantage Global)",
+      website: "https://sliqpay.com",
     },
     responsibilities:
       "Maintained and developed features for their SaaS application that offers payment solution for their clients in medical field.",

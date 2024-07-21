@@ -1,3 +1,4 @@
+"use client";
 import {
   faLinkedin,
   faSquareGithub,
@@ -18,6 +19,7 @@ const availableSocialPlatforms = {
     <a href="https://www.linkedin.com/in/gracegalanaga/" target="_blank">
       <FontAwesomeIcon
         icon={faLinkedin}
+        size="xl"
         className="group-hover:text-muave text-white-mantle lg:text-flamingo"
       />
     </a>
@@ -26,6 +28,7 @@ const availableSocialPlatforms = {
     <a href="https://x.com/thegreecepotato" target="_blank">
       <FontAwesomeIcon
         icon={faSquareTwitter}
+        size="xl"
         className="group-hover:text-muave text-white-mantle lg:text-flamingo"
       />
     </a>
@@ -34,6 +37,7 @@ const availableSocialPlatforms = {
     <a href="https://github.com/gracemonz" target="_blank">
       <FontAwesomeIcon
         icon={faSquareGithub}
+        size="xl"
         className="group-hover:text-muave text-white-mantle lg:text-flamingo"
       />
     </a>
@@ -42,6 +46,7 @@ const availableSocialPlatforms = {
     <a href="https://gitlab.com/moshimanju" target="_blank">
       <FontAwesomeIcon
         icon={faSquareGitlab}
+        size="xl"
         className="group-hover:text-muave text-white-mantle lg:text-flamingo"
       />
     </a>

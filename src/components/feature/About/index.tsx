@@ -1,6 +1,6 @@
-import ExperienceList from "@/components/feature/ExperienceList";
-import Container from "@/components/feature/Container";
 import { Typography } from "@/components/base";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons/faArrowUpRightFromSquare";
 
 const About = () => {
   return (
@@ -23,7 +23,11 @@ const About = () => {
           <Typography.Highlight> payment solutions</Typography.Highlight>, and
           <Typography.Highlight> logistics</Typography.Highlight>. These days, I
           focus on developing and maintaining features for
-          <Typography.Highlight> Trunkrs&apos; </Typography.Highlight>
+          <a href="https://trunkrs.nl/" target="_blank">
+            <Typography.Highlight>
+              &nbsp;Trunkrs&apos;&nbsp;
+            </Typography.Highlight>
+          </a>
           in-house applications to keep their operations running smoothly.
         </Typography.BodyText>
         <Typography.BodyText>

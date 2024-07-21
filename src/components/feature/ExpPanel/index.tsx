@@ -35,24 +35,24 @@ const ExpPanel = ({
   };
 
   return (
-    <div className="group/expcard md:flex md:hover:bg-none cursor-pointer md:hover:shadow-2xl md:hover:transition-all my-4 py-4 rounded-md">
-      <div className="md:p-5 max-w-[400px]">
+    <div className="group/expcard transition ease-in-out md:flex md:hover:bg-none cursor-pointer md:hover:shadow-2xl md:hover:transition-all my-4 py-4 rounded-md">
+      <div className="md:p-5 max-w-[400px] min-w-[150px]">
         <Typography.SmallText className="text-sm text-white-mantle uppercase font-mono">
           {yearStarted} - {isCurrent && "Present"} {!isCurrent && yearEnded}
         </Typography.SmallText>
       </div>
       <div className="flex-1 md:p-4">
-        <a href={handleWeblink()} target="_blank" className="flex">
+        <a href={handleWeblink()} target="_blank">
           <Typography.Subheader className="lg:text-xl capitalize text-white-base group-hover/expcard:text-muave">
             {jobTitle}, {company.name} {hasClient && ` · ${client.name}`}
+            <span className="w-4 mx-4 self-center">
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
+                className="group-hover/expcard:text-muave"
+                size="sm"
+              />
+            </span>
           </Typography.Subheader>
-          <p className="h-4 w-4 mx-4 self-center">
-            <FontAwesomeIcon
-              icon={faArrowUpRightFromSquare}
-              className="group-hover/expcard:text-muave"
-              size="sm"
-            />
-          </p>
         </a>
         <div className="my-4">
           <Typography.BodyText className="text-white-crust font-light">
@@ -64,12 +64,12 @@ const ExpPanel = ({
             projects.map((project) => (
               <div
                 key={project.name}
-                className="my-2 group/project hover:text-muave"
+                className="my-2 group/project transition ease-in-out hover:text-muave"
               >
                 <a
                   href={project.website || "#"}
                   target="_blank"
-                  className="flex items-center"
+                  className="flex"
                 >
                   <p className="h-3.5 w-3.5 mr-2">
                     <FontAwesomeIcon
@@ -78,7 +78,7 @@ const ExpPanel = ({
                       size="xs"
                     />
                   </p>
-                  <Typography.SmallText>{project.name}</Typography.SmallText>
+                  <Typography.BodyText>{project.name}</Typography.BodyText>
                 </a>
               </div>
             ))}

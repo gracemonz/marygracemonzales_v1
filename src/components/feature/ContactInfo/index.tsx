@@ -1,3 +1,4 @@
+"use client";
 import { Typography } from "src/components/base";
 import SocialList, { SocialsEnum } from "../SocialsList";
 

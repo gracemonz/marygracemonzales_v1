@@ -49,7 +49,10 @@ export const Highlight = ({
   ...props
 }: { children: ReactNode } & React.HTMLAttributes<HTMLParagraphElement>) => {
   return (
-    <span className="font-semibold text-muave" {...props}>
+    <span
+      className="transition ease-in-out font-semibold text-flamingo hover:text-muave"
+      {...props}
+    >
       {children}
     </span>
   );
