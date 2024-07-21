@@ -9,8 +9,8 @@
 }
 
 .gradient {
-  width: 1150px;
-  height: 1150px;
+  width: 900px;
+  height: 400px;
   border-radius: 50%;
   opacity: 0.8;
   filter: blur(70px);
@@ -25,51 +25,52 @@
 .firstRotateAnimator {
   // background-color: #e78284;
   position: absolute;
-  top: -35%;
-  left: 0;
+  top: -80%;
+  left: -10%;
   right: auto;
   width: 30%;
   height: 100vh;
-  animation-name: move-by-circle-animation;
-  animation-duration: 50s;
+  animation-name: down-elevator-animation;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
 }
+
 .secondRotateAnimation {
   // background: #edb080;
   position: absolute;
-  top: -35%;
-  left: 35%;
+  top: -80%;
+  left: 20%;
   right: auto;
   width: 30%;
   height: 100vh;
-  animation-name: move-by-circle-animation;
-  animation-duration: 60s;
+  animation-name: up-elevator-animation;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
 .thirdRotateAnimation {
   // background: #a5ff6e;
   position: absolute;
-  top: -35%;
-  right: 35%;
+  top: -80%;
+  right: 20%;
   left: auto;
   width: 30%;
   height: 100vh;
-  animation-name: move-by-circle-animation;
-  animation-duration: 55s;
+  animation-name: down-elevator-animation;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
 .fourthRotateAnimation {
   // background: #7eb9ff;
   position: absolute;
-  top: -35%;
+  top: -80%;
   left: auto;
-  right: 10%;
+  right: 5%;
   width: 30%;
   height: 100vh;
-  animation-name: move-by-circle-animation;
-  animation-duration: 65s;
+  animation-name: up-elevator-animation;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
@@ -192,5 +193,29 @@
   100% {
     transform: rotate(360deg);
     width: 10%;
+  }
+}
+
+@keyframes down-elevator-animation {
+  0% {
+    top: -10%;
+  }
+  50% {
+    top: -5%;
+  }
+  100% {
+    top: -10%;
+  }
+}
+
+@keyframes up-elevator-animation {
+  0% {
+    top: -5%;
+  }
+  50% {
+    top: -10%;
+  }
+  100% {
+    top: -5%;
   }
 }

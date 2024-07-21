@@ -20,7 +20,7 @@ const MainBanner = () => {
           <Typography.Header className="lg:text-6xl font-bold text-5xl">
             Grace Monzales
           </Typography.Header>
-          <Typography.BodyText className="lg:text-2xl">
+          <Typography.BodyText className="lg:text-2xl font-light">
             I&apos;m a Frontend Engineer who crafts visually appealing and
             highly functional web applications. At present, I&apos;m directing
             my efforts towards developing feature-based solutions for
