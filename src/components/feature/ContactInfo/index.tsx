@@ -3,7 +3,13 @@ import { Typography } from "src/components/base";
 import SocialList, { SocialsEnum } from "../SocialsList";
 
 const ContactInfo = () => {
-  const socials = ["Github", "Gitlab", "LinkedIn", "Twitter"] as SocialsEnum[];
+  const socials = [
+    "Github",
+    "Gitlab",
+    "LinkedIn",
+    "Twitter",
+    "Instagram",
+  ] as SocialsEnum[];
 
   const handlemMailTo = (event: React.MouseEvent<HTMLParagraphElement>) => {
     window.location.href = "mailto:galanagamarygrace@gmail.com";

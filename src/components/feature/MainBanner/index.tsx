@@ -8,7 +8,13 @@ import GitlabIcon from "src/svg/Gitlab";
 import { motion } from "framer-motion";
 
 const MainBanner = () => {
-  const socials = ["LinkedIn", "Twitter", "Github", "Gitlab"] as SocialsEnum[];
+  const socials = [
+    "LinkedIn",
+    "Twitter",
+    "Github",
+    "Gitlab",
+    "Instagram",
+  ] as SocialsEnum[];
 
   return (
     <Container>

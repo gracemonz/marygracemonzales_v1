@@ -3,6 +3,7 @@ import {
   faLinkedin,
   faSquareGithub,
   faSquareGitlab,
+  faSquareInstagram,
   faSquareTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,6 +12,7 @@ export enum SocialsEnum {
   Github = "Github",
   Gitlab = "Gitlab",
   LinkedIn = "LinkedIn",
+  Instagram = "Instagram",
 }
 
 // TODO: refactor redirects
@@ -46,6 +48,15 @@ const availableSocialPlatforms = {
     <a href="https://gitlab.com/moshimanju" target="_blank">
       <FontAwesomeIcon
         icon={faSquareGitlab}
+        size="xl"
+        className="group-hover:text-muave text-white-mantle lg:text-flamingo"
+      />
+    </a>
+  ),
+  [SocialsEnum.Instagram]: (
+    <a href="https://www.instagram.com/_artbyanais/" target="_blank">
+      <FontAwesomeIcon
+        icon={faSquareInstagram}
         size="xl"
         className="group-hover:text-muave text-white-mantle lg:text-flamingo"
       />
