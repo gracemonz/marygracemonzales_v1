@@ -5,8 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mary Grace Monzales",
+  title: "Grace Monzales",
   description: "Web portfolio v1",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

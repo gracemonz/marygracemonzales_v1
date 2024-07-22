@@ -9,7 +9,7 @@ const ExperienceList = () => {
   return (
     <div>
       <div className="sm:p-0 md:p-0 lg:pl-5">
-        <Typography.Subheader>My work journey</Typography.Subheader>
+        <Typography.Subheader>Experience</Typography.Subheader>
       </div>
       {hasExperience &&
         workExperiences.map((exp, index) => <ExpPanel key={index} {...exp} />)}
