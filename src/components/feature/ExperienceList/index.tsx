@@ -13,6 +13,35 @@ const ExperienceList = () => {
       </div>
       {hasExperience &&
         workExperiences.map((exp, index) => <ExpPanel key={index} {...exp} />)}
+      <div className="my-10 font-light">
+        <Typography.SmallText>
+          Inspired by&nbsp;
+          <a href="https://brittanychiang.com/" target="_blank">
+            <Typography.Highlight>Brittany Chiang&apos;s</Typography.Highlight>
+          </a>
+          &nbsp;web portfolio. Designed using&nbsp;
+          <a href="https://www.figma.com/" target="_blank">
+            <Typography.Highlight>Figma</Typography.Highlight>
+          </a>
+          &nbsp;and coded in&nbsp;
+          <a href="https://code.visualstudio.com/" target="_blank">
+            <Typography.Highlight>Visual Studio Code</Typography.Highlight>
+          </a>
+          . Built using&nbsp;
+          <a href="https://nextjs.org/" target="_blank">
+            <Typography.Highlight>Next.js</Typography.Highlight>
+          </a>
+          , and&nbsp;
+          <a href="https://tailwindcss.com/" target="_blank">
+            <Typography.Highlight>Tailwind CSS</Typography.Highlight>
+          </a>
+          , deployed with&nbsp;
+          <a href="https://vercel.com/" target="_blank">
+            <Typography.Highlight>Vercel</Typography.Highlight>
+          </a>
+          .
+        </Typography.SmallText>
+      </div>
     </div>
   );
 };
