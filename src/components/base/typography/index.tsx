@@ -24,7 +24,16 @@ export const Subheader = ({
 
 export const BlockQoute = () => {};
 
-export const Links = () => {};
+export const Link = ({
+  children,
+  ...props
+}: { children: ReactNode } & React.HTMLAttributes<HTMLParagraphElement>) => {
+  return (
+    <p className="text-flamingo font-semibold capitalize" {...props}>
+      {children}
+    </p>
+  );
+};
 
 export const BodyText = ({
   children,
@@ -57,8 +66,6 @@ export const Highlight = ({
     </span>
   );
 };
-
-export const List = () => {};
 
 export const SmallText = ({
   children,

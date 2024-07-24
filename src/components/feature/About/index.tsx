@@ -39,10 +39,12 @@ const About = () => {
           restaurants, travelling locally, free diving, or playing games.
         </Typography.BodyText>
       </div>
-      {/* soon */}
-      {/* <div className="cursor-pointer">
-        <Typography.Subheader>View full résumé</Typography.Subheader>
-      </div> */}
+      <a href="/grcmnzls.pdf" target="_blank" className="flex gap-2">
+        <Typography.Link>View full résumé</Typography.Link>
+        <div className="text-flamingo">
+          <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="sm" />
+        </div>
+      </a>
     </div>
   );
 };

@@ -45,7 +45,7 @@ const ExpPanel = ({
         <a href={handleWeblink()} target="_blank">
           <Typography.Subheader className="lg:text-xl capitalize text-white-base group-hover/expcard:text-muave">
             {jobTitle}, {company.name} {hasClient && ` · ${client.name}`}
-            <span className="w-4 mx-4 self-center">
+            <span className="w-4 h-4 mx-4 self-center">
               <FontAwesomeIcon
                 icon={faArrowUpRightFromSquare}
                 className="group-hover/expcard:text-muave"
