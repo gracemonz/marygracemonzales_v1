@@ -4,7 +4,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons/faAr
 
 const About = () => {
   return (
-    <div className="max-w-[551px]">
+    <div>
       <Typography.Subheader>About</Typography.Subheader>
       <div className="mt-6 py-6 grid grid-row-3 grid-flow-row gap-6 font-light">
         <Typography.BodyText>
