@@ -18,8 +18,9 @@ const MainBanner = () => {
 
   return (
     <Container>
-      <div className="h-screen flex flex-col justify-center">
-        <div className="lg:my-20">
+      <div className="lg:h-screen flex flex-col justify-evenly">
+        <div></div>
+        <div className="py-10 lg:mt-20">
           <Typography.Caption className=" lg:text-2xl font-mono">
             Hello! 👋 I am
           </Typography.Caption>
@@ -37,7 +38,7 @@ const MainBanner = () => {
             daily logistic operations.
           </Typography.BodyText>
         </div>
-        <div className="my-10 md:block sm:block lg:hidden">
+        <div className="md:block sm:block lg:hidden">
           <SocialList platforms={socials} position="horizontal" />
         </div>
         <div className="hidden my-10 lg:flex w-auto flex-col gap-4 items-center align-bottom">

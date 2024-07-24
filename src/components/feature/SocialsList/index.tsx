@@ -7,6 +7,7 @@ import {
   faSquareTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export enum SocialsEnum {
   Twitter = "Twitter",
   Github = "Github",
