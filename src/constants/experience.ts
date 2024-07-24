@@ -4,9 +4,9 @@ export const workExperience: Experience[] = [
   {
     yearStarted: "2022",
     yearEnded: "2024",
-    jobTitle: "Front End Developer",
+    jobTitle: "Frontend Developer",
     company: {
-      name: "Microsourcing Inc.",
+      name: "Microsourcing",
     },
     client: {
       name: "Trunkrs",

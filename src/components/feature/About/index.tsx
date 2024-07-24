@@ -1,6 +1,7 @@
 import { Typography } from "@/components/base";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons/faArrowUpRightFromSquare";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight";
 
 const About = () => {
   return (
@@ -39,11 +40,17 @@ const About = () => {
           restaurants, travelling locally, free diving, or playing games.
         </Typography.BodyText>
       </div>
-      <a href="/grcmnzls.pdf" target="_blank" className="flex gap-2">
+      <a
+        href="/grcmnzls.pdf"
+        target="_blank"
+        className="flex w-auto gap-2 group/link"
+      >
         <Typography.Link>View full résumé</Typography.Link>
-        <div className="text-flamingo">
-          <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="sm" />
-        </div>
+        <FontAwesomeIcon
+          icon={faArrowRight}
+          className="text-flamingo align-super group-hover/link:text-muave  -rotate-45"
+          size="sm"
+        />
       </a>
     </div>
   );

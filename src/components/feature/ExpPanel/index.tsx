@@ -1,5 +1,9 @@
 import { Typography } from "@/components/base";
-import { faLink, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faLink,
+  faLocationArrow,
+} from "@fortawesome/free-solid-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons/faArrowUpRightFromSquare";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Chip } from "@nextui-org/react";
@@ -45,10 +49,10 @@ const ExpPanel = ({
         <a href={handleWeblink()} target="_blank">
           <Typography.Subheader className="lg:text-xl capitalize text-white-base group-hover/expcard:text-muave">
             {jobTitle}, {company.name} {hasClient && ` · ${client.name}`}
-            <span className="w-4 h-4 mx-4 self-center">
+            <span className="w-4 h-4 mx-3 self-center">
               <FontAwesomeIcon
-                icon={faArrowUpRightFromSquare}
-                className="group-hover/expcard:text-muave"
+                icon={faArrowRight}
+                className="group-hover/expcard:text-muave -rotate-45"
                 size="sm"
               />
             </span>

@@ -29,7 +29,10 @@ export const Link = ({
   ...props
 }: { children: ReactNode } & React.HTMLAttributes<HTMLParagraphElement>) => {
   return (
-    <p className="text-flamingo font-semibold capitalize" {...props}>
+    <p
+      className="text-flamingo font-semibold capitalize hover:text-muave hover:underline transition ease-in-out"
+      {...props}
+    >
       {children}
     </p>
   );
