@@ -9,6 +9,7 @@ export interface Experience {
   keyAchievements: string[];
   technologyUsed: (Technologies | CMS | Frameworks | Libraries | Databases)[];
   isCurrent: boolean;
+  companyLink?: string;
 }
 
 export type Information = { name: string; website?: string };
@@ -47,7 +48,8 @@ export type Libraries =
   | "SASS/LESS"
   | "Redux"
   | "RTK Query"
-  | "MobX";
+  | "MobX"
+  | "Zustand";
 
 export type Frameworks =
   | "NextJS"

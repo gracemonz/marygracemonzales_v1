@@ -34,8 +34,10 @@ export const workExperience: Experience[] = [
       "Redux",
       "RTK Query",
       "MobX",
+      "Zustand",
     ],
     isCurrent: true,
+    companyLink: "https://trunkrs.nl/",
   },
   {
     yearStarted: "2021",
@@ -59,6 +61,7 @@ export const workExperience: Experience[] = [
     keyAchievements: ["", ""],
     technologyUsed: ["Typescript", "AngularJS", "PHP", "Material UI", "Jest"],
     isCurrent: false,
+    companyLink: "https://denticarepaymentplans.com.au/",
   },
   {
     yearStarted: "2020",
@@ -88,6 +91,7 @@ export const workExperience: Experience[] = [
       "GraphQL",
     ],
     isCurrent: false,
+    companyLink: "https://www.umpisa.co/",
   },
   {
     yearStarted: "2018",
@@ -113,5 +117,6 @@ export const workExperience: Experience[] = [
       "Laravel",
     ],
     isCurrent: false,
+    companyLink: "https://coreproc.com/",
   },
 ];
