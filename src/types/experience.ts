@@ -49,7 +49,8 @@ export type Libraries =
   | "Redux"
   | "RTK Query"
   | "MobX"
-  | "Zustand";
+  | "Zustand"
+  | "Tailwind";
 
 export type Frameworks =
   | "NextJS"

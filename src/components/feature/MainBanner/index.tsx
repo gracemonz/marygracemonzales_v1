@@ -31,11 +31,11 @@ const MainBanner = () => {
             I&apos;m a Frontend Engineer who crafts visually appealing and
             highly functional web applications. At present, I&apos;m directing
             my efforts towards developing feature-based solutions for
-            <a href="https://trunkrs.nl/" target="_blank">
-              &nbsp;<Typography.Highlight>Trunkrs&apos;</Typography.Highlight>
+            <a href="https://continue.co/" target="_blank">
+              &nbsp;<Typography.Highlight>Continue&apos;s</Typography.Highlight>
               &nbsp;
             </a>
-            daily logistic operations.
+            resale marketplace.
           </Typography.BodyText>
         </div>
         <div className="md:block sm:block lg:hidden">

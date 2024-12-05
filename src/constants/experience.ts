@@ -2,6 +2,20 @@ import { Experience } from "src/types/experience";
 
 export const workExperience: Experience[] = [
   {
+    yearStarted: "2024",
+    yearEnded: "current",
+    jobTitle: "Frontend Developer",
+    company: {
+      name: "Continue UK",
+    },
+    projects: [],
+    responsibilities: "Currently working as a Frontend Engineer",
+    keyAchievements: ["", ""],
+    technologyUsed: ["Typescript", "React", "HTML", "Javascript", "Zustand", "Storybook", "CSS", "Tailwind", "Material UI"],
+    isCurrent: true,
+    companyLink: "https://www.continue.co/",
+  },
+  {
     yearStarted: "2022",
     yearEnded: "2024",
     jobTitle: "Frontend Developer",
@@ -36,7 +50,7 @@ export const workExperience: Experience[] = [
       "MobX",
       "Zustand",
     ],
-    isCurrent: true,
+    isCurrent: false,
     companyLink: "https://trunkrs.nl/",
   },
   {

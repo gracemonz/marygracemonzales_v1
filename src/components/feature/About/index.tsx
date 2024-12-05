@@ -27,13 +27,13 @@ const About = () => {
           <Typography.Highlight>&nbsp;payment solutions</Typography.Highlight>,
           and
           <Typography.Highlight>&nbsp;logistics</Typography.Highlight>. These
-          days, I focus on developing and maintaining features for
-          <a href="https://trunkrs.nl/" target="_blank">
+          days, I focus on developing exciting features for
+          <a href="https://continue.co/" target="_blank">
             <Typography.Highlight>
-              &nbsp;Trunkrs&apos;&nbsp;
+              &nbsp;Continue&apos;s
             </Typography.Highlight>
           </a>
-          in-house applications to keep their operations running smoothly.
+          &nbsp;circular marketplace to cater for our partnered brand&apos;s needs.
         </Typography.BodyText>
         <Typography.BodyText>
           When I&apos;m not coding, you&apos;ll find me exploring new
